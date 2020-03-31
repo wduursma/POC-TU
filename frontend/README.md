@@ -1,4 +1,4 @@
-# frontend
+# POC
 
 ## Project setup
 ```
