@@ -1,14 +1,14 @@
 <template>
   <div class="ssb_blok">
-
+      ssb
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
+import { Component, Vue } from 'vue-property-decorator';
 
 @Component
-export default class ssb extends Vue {
+export default class Ssb extends Vue {
   
 }
 </script>

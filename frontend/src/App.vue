@@ -1,6 +1,6 @@
 <template>
-
   <div id="app">
+    <ssb/>
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> | 
@@ -9,6 +9,15 @@
     <router-view/>
   </div>
 </template>
+
+<script>
+import ssb from '@/components/ssb.vue'
+export default {
+  components: {
+    ssb
+  }
+}
+</script>
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
