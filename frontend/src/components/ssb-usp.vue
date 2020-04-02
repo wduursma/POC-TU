@@ -33,6 +33,10 @@ div#usp-header {
     z-index: 999;
     position: relative;
     font-size: 12px;
+    a:hover {
+      color: #333;
+      text-decoration: none;
+    }
     .usp_line {
         word-wrap: normal;
         white-space: nowrap;

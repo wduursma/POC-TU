@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <ssb/>
+    <ssbUsp/>
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> | 
@@ -11,15 +11,16 @@
 </template>
 
 <script>
-import ssb from '@/components/ssb.vue'
+import ssbUsp from '@/components/ssb-usp.vue'
 export default {
   components: {
-    ssb
+    ssbUsp
   }
 }
 </script>
 
 <style lang="scss">
+@import './color.scss';
 @import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
 
 #app {
@@ -27,14 +28,14 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: $tuGray;
 }
-a:link, a:visited {
-  color: #00792c;
+a:link, a:visited{
+  color: $tuGreen
 }
-a:hover, a:active {
-  color: #333;
-  text-decoration: none;
+a:hover {
+    color: $tuGray;
+    text-decoration: underline;
 }
 
 #nav {
@@ -42,10 +43,10 @@ a:hover, a:active {
 
   a {
     font-weight: bold;
-    color: #3d4942;
+    color: $tuGray;
 
     &.router-link-exact-active {
-      color: #00792c;
+      color: $tuGreen;
       font-family: 'Chilanka', cursive;
     }
   }
