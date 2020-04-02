@@ -17,15 +17,16 @@
 import { Component, Vue } from 'vue-property-decorator';
 
 @Component
-export default class Ssb extends Vue {
-  
+    export default class Ssb extends Vue {
 }
 </script>
 
 
 <style scoped lang="scss">
+@import '../color.scss';
+
 div#usp-header {
-    border-bottom: 1px solid #ededed;
+    border-bottom: 1px solid $tuWhiteGray;
     min-height: 31px;
     line-height: 31px;
     margin: 0 auto;
@@ -34,7 +35,7 @@ div#usp-header {
     position: relative;
     font-size: 12px;
     a:hover {
-      color: #333;
+      color: $tuGray;
       text-decoration: none;
     }
     .usp_line {
@@ -42,7 +43,7 @@ div#usp-header {
         white-space: nowrap;
         display: inline-block;
         font-family: 'Chilanka', cursive;
-        color: #9d9d9d;
+        color: $tuLightGray;
         font-style: italic;
     }
     .customerservice  {
@@ -55,6 +56,5 @@ div#usp-header {
         font-style: normal;
     }
 }
-
-    
+   
 </style>
