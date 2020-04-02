@@ -29,16 +29,23 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
+a:link, a:visited {
+  color: #00792c;
+}
+a:hover, a:active {
+  color: #333;
+  text-decoration: none;
+}
 
 #nav {
   padding: 30px;
 
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color: #3d4942;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: #00792c;
       font-family: 'Chilanka', cursive;
     }
   }
