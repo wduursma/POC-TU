@@ -1,20 +1,25 @@
 <template>
   <div id="app">
     <ssbUsp/>
+    <appBody/>
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> | 
       <router-link to="/assortment-overview">Assortment</router-link>
     </div>
     <router-view/>
+  
   </div>
 </template>
 
 <script>
-import ssbUsp from '@/components/ssb-usp.vue'
+import ssbUsp from '@/components/ssbUsp.vue'
+import appBody from '@/components/appBody.vue'
+
 export default {
   components: {
-    ssbUsp
+    ssbUsp,
+    appBody,
   }
 }
 </script>

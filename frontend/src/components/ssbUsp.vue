@@ -39,6 +39,7 @@ div#usp-header {
       text-decoration: none;
     }
     .usp_line {
+        text-align: left;
         word-wrap: normal;
         white-space: nowrap;
         display: inline-block;
