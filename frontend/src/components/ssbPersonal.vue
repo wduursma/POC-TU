@@ -25,14 +25,15 @@ import { Component, Vue } from 'vue-property-decorator';
 
 
 <style scoped lang="scss">
-    @import '../color.scss';
+@import '../color.scss';
 div.shoppingCard {
-    min-width: 220px;
+    min-width: 180px;
     left: 1px;
     padding-top: 10px;
     margin-top: 0;
     height: 50px;
     float: right;
+    text-align: right;
     background: url('../assets/winkelwagen-empty.png') 0 0 no-repeat;
         >a>div {
         line-height: .8em;
@@ -40,6 +41,5 @@ div.shoppingCard {
         height: 100%;
     }
 }
-
-   
+  
 </style>

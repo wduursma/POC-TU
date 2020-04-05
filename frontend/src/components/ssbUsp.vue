@@ -44,7 +44,7 @@ div#usp-header {
         white-space: nowrap;
         display: inline-block;
         font-family: 'Chilanka', cursive;
-        color: $tuLightGray;
+        color: $tuGrayLight;
         font-style: italic;
     }
     .customerservice  {

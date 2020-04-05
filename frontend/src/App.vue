@@ -43,7 +43,12 @@ a:hover {
     text-decoration: underline;
 }
 
-#nav {
+@media (min-width: 1200px){
+.container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 960px !Important;
+  } 
+}
+#nav { /* kan weg */
   padding: 30px;
 
   a {

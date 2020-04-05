@@ -1,22 +1,34 @@
 <template>
-  <div  id="header" class="col-sm-12 appHeader">
-            <div class="col-sm-4 companyLogo headerLeft">
-              <img alt="Technischeunie logo" src="../assets/logo.png">
-            </div>
-            <div class="col-sm-8 headerRight">
-               <ssbpersonal/>
-            </div>
+<div id="header" class="headercontainer">
+  <div class="row">
+    <div class="col-sm-12 appHeader">
+        <div class="col-sm-4 companyLogo headerLeft">
+          <img alt="Technischeunie logo" src="../assets/logo.png">
         </div>
+        <div class="col-sm-8 headerRight">
+            <ssbpersonal/>
+        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+        <!-- nav -->
+        <headernav/>
+    </div>
+  </div>
+</div>
 </template>
 
 <script lang="ts">
-//import { Component, Vue } from 'vue-property-decorator';
+
 import SsbPersonal from './ssbPersonal.vue'
+import HeaderNav from './headerNav.vue'
     export default {
       name: 'appHeader',
      
       components: {
-        'ssbpersonal': SsbPersonal
+        'ssbpersonal': SsbPersonal,
+        'headernav': HeaderNav
       }
 }
 </script>

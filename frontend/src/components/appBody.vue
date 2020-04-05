@@ -1,11 +1,9 @@
 <template>
   <div  id="top" class="">
     <div class="container body">
-        <div class="row">
-            <div class="col-sm-12">
+      
                 <appheader/>
-            </div>
-        </div>
+
     </div>
   </div>
 </template>
