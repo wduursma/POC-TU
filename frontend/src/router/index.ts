@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import assortiment from '../views/assortment-overview.vue'
+import assortiment from '../views/assortment.vue'
 
 Vue.use(VueRouter)
 
@@ -17,7 +17,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
-     path: '/assortment-overview', 
+     path: '/assortment', 
      name: 'Assortiment',
      component: assortiment 
   }

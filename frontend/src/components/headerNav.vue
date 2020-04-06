@@ -3,14 +3,14 @@
     <div class="nav-divider"></div>
       <ul id="normal-main">
         <li class="nav-home current">
-          <a href="/landingpage/" title="Home">
+          <router-link to="/">
             <span class="home desktop-only">&nbsp;</span>
-          </a>
+          </router-link> 
         </li>
         <li v-for="main in mainMenu" v-bind:key="main" class="nav-menu"> 
-          <a href="">
-            {{ main }}
-            </a>
+          <router-link to="/assortment">
+            {{ main.name }}
+          </router-link>
         </li>
       </ul>
     <div class="nav-divider"></div>
@@ -25,11 +25,11 @@ import { Component, Vue } from 'vue-property-decorator';
       data() {
       return {
         mainMenu: [
-          'Assortiment',
-          'Diensten',
-          'Nieuws',
-          'Themas',
-          'Over ons'
+          { "name": "Assortiment", "url": "/assortment" },
+          { "name": "Diensten", "url": "/assortment" },
+          { "name": "Nieuws", "url": "/assortment" },
+          { "name": "Thema's", "url": "/assortment" },
+          { "name": "Over Ons", "url": "/assortment" },
         ]
 
       }
