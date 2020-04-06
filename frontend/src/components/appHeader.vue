@@ -23,7 +23,7 @@
 
 import SsbPersonal from './ssbPersonal.vue'
 import HeaderNav from './headerNav.vue'
-    export default {
+export default {
       name: 'appHeader',
      
       components: {

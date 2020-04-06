@@ -7,6 +7,11 @@
             <span class="home desktop-only">&nbsp;</span>
           </a>
         </li>
+        <li v-for="main in mainMenu" v-bind:key="main" class="nav-menu"> 
+          <a href="">
+            {{ main }}
+            </a>
+        </li>
       </ul>
     <div class="nav-divider"></div>
   </nav>
@@ -17,6 +22,18 @@ import { Component, Vue } from 'vue-property-decorator';
 
 @Component
     export default class HeaderNav extends Vue {
+      data() {
+      return {
+        mainMenu: [
+          'Assortiment',
+          'Diensten',
+          'Nieuws',
+          'Themas',
+          'Over ons'
+        ]
+
+      }
+    }
 }
 </script>
 
@@ -39,6 +56,7 @@ nav.main {
       margin-top: 6px;
       margin-bottom: 6px;
       list-style: none;
+      float: left;
       a {
         position: absolute;
         top: 10px;
@@ -50,7 +68,33 @@ nav.main {
         font-size: 1.35em;
         padding: 10px 4px 8px;
       }
-      
+    }
+    li.current {
+        border-color: $tuGreen;
+        border-style: solid;
+        border-top: 0px;
+        border-bottom: 0px;
+        border-left-width: 1px;
+        border-right-width: 1px;
+    }
+    li.nav-menu {
+        /*min-width: 140px;*/
+        padding-left: 20px;
+        padding-right: 20px;
+        a {
+          position: relative;
+          top: -7px;
+          height: 23px;
+          width: 100%;
+          color: $tuGreen;
+          display: block;
+          font-family: Arial;
+          font-size: 1em;
+          padding: 10px 4px 8px;
+      }
+      a:hover {
+        text-decoration: none;
+      }
     }
   }
 }
@@ -59,7 +103,7 @@ nav.main {
     margin-left: 2px;
     width: 50px;
 }
-nav.main>ul>li.current {
+nav.main>ul>li.currentx {
     border-color: $tuGreen;
     border-style: solid;
     border-top: 0px;
@@ -67,6 +111,7 @@ nav.main>ul>li.current {
     border-left-width: 1px;
     border-right-width: 1px;
 }
+
  div.nav-divider {
     float: left;
     height: 1px;
