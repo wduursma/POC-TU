@@ -43,17 +43,6 @@ a:hover {
     max-width: 960px !Important;
   } 
 }
-#nav { /* kan weg */
-  padding: 30px;
 
-  a {
-    font-weight: bold;
-    color: $tuGray;
 
-    &.router-link-exact-active {
-      color: $tuGreen;
-      font-family: 'Chilanka', cursive;
-    }
-  }
-}
 </style>

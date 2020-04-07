@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6 usp_line">
-                Voor 20.00u besteld, morgen geleverd* Snelle levering op uw werkplek
+                Voor 20.00u besteld volgende dag op uw werkplek geleverd
             </div>
             <div class="col-sm-6 customerservice">
                 <a href="/klantenservice/" class="icon icon-customerservice">Klantenservice</a>

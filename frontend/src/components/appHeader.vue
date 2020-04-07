@@ -3,7 +3,9 @@
   <div class="row">
     <div class="col-sm-12 appHeader">
         <div class="col-sm-4 companyLogo headerLeft">
-          <img alt="Technischeunie logo" src="../assets/logo.png">
+           <router-link to="/">
+            <img alt="Technischeunie logo" src="../assets/logo.png">
+           </router-link>
         </div>
         <div class="col-sm-8 headerRight">
             <ssbpersonal/>

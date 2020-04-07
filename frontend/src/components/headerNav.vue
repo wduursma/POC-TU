@@ -2,11 +2,13 @@
     <nav id="mainnavigation" class="main">
     <div class="nav-divider"></div>
       <ul id="normal-main">
+        <!--
         <li class="nav-home current">
           <router-link to="/">
             <span class="home desktop-only">&nbsp;</span>
           </router-link> 
         </li>
+        -->
         <li v-for="main in mainMenu" v-bind:key="main" class="nav-menu"> 
           <router-link :to="'' +  main.url">
             {{ main.name }}
@@ -26,11 +28,15 @@ import { Component, Vue } from 'vue-property-decorator';
       data() {
       return {
         mainMenu: [
-          { "name": "Assortiment", "url": "/assortment" },
-          { "name": "Diensten", "url": "/diensten" },
-          { "name": "Nieuws", "url": "/nieuws" },
-          { "name": "Thema's", "url": "/thema" },
-          { "name": "Over Ons", "url": "/overons" },
+          { "name": "Draad & Kabel", "url": "/draad-kabel" },
+          { "name": "Elektrotechniek", "url": "/elektrotechniek" },
+          { "name": "Verlichting", "url": "/verlichting" },
+          { "name": "Duurzaamheid", "url": "/thema" },
+          { "name": "Leidingsystemen", "url": "/leidingsystemen" },
+          { "name": "Sanitair", "url": "/sanitair" },
+          { "name": "Gereedschap", "url": "/gereedschap" },
+          { "name": "PBM", "url": "/pbm" },
+          { "name": "Bruin/witgoed", "url": "/bruin-witgoed" }
         ]
 
       }
@@ -45,7 +51,7 @@ import { Component, Vue } from 'vue-property-decorator';
 nav.main {
     position: relative;
     margin: 0;
-    width: 960px;
+    width: 100%;
     padding-bottom: 10px;
     padding-top: 10px;
     >ul {
@@ -66,7 +72,7 @@ nav.main {
         color: $tuGreen;
         display: block;
         font-family: Arial;
-        font-size: 1.35em;
+        font-size: 1em;
         padding: 10px 4px 8px;
       }
     }
@@ -79,19 +85,17 @@ nav.main {
         border-right-width: 1px;
     }
     li.nav-menu {
-        /*min-width: 140px;*/
-        padding-left: 20px;
         padding-right: 20px;
         a {
           position: relative;
           top: -7px;
           height: 23px;
           width: 100%;
-          color: $tuGreen;
+          color: $tuGrayMenu;
           display: block;
           font-family: Arial;
-          font-size: 1em;
-          padding: 10px 4px 8px;
+          font-size: 0.9em;
+          padding: 10px 3px 8px 4px;
       }
       a:hover {
         text-decoration: none;
