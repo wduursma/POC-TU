@@ -3,6 +3,7 @@
     <div class="container body">
       
                 <appheader/>
+                <search/>
 
     </div>
   </div>
@@ -10,11 +11,13 @@
 
 <script lang="ts">
 import AppHeader from './appHeader.vue'
+import AppSearch from './appSearch.vue'
 
 export default {
   name: 'appBody',
   components: {
-    'appheader': AppHeader
+    'appheader': AppHeader,
+    'search':  AppSearch
   }
 }
 

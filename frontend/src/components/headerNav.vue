@@ -8,9 +8,10 @@
           </router-link> 
         </li>
         <li v-for="main in mainMenu" v-bind:key="main" class="nav-menu"> 
-          <router-link to="/assortment">
+          <router-link :to="'' +  main.url">
             {{ main.name }}
           </router-link>
+          
         </li>
       </ul>
     <div class="nav-divider"></div>
@@ -26,10 +27,10 @@ import { Component, Vue } from 'vue-property-decorator';
       return {
         mainMenu: [
           { "name": "Assortiment", "url": "/assortment" },
-          { "name": "Diensten", "url": "/assortment" },
-          { "name": "Nieuws", "url": "/assortment" },
-          { "name": "Thema's", "url": "/assortment" },
-          { "name": "Over Ons", "url": "/assortment" },
+          { "name": "Diensten", "url": "/diensten" },
+          { "name": "Nieuws", "url": "/nieuws" },
+          { "name": "Thema's", "url": "/thema" },
+          { "name": "Over Ons", "url": "/overons" },
         ]
 
       }
