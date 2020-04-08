@@ -2,12 +2,13 @@
 <div id="header" class="headercontainer">
   <div class="row">
     <div class="col-sm-12 appHeader">
-        <div class="col-sm-4 companyLogo headerLeft">
-           <router-link to="/">
-            <img alt="Technischeunie logo" src="../assets/logo.png">
-           </router-link>
-        </div>
+        <!-- logo -->
+          <logo/>
         <div class="col-sm-8 headerRight">
+           
+            <!-- main menu -->
+            <!-- Search --> 
+            <!-- personal menu -->
             <ssbpersonal/>
         </div>
     </div>
@@ -22,13 +23,14 @@
 </template>
 
 <script lang="ts">
-
-import SsbPersonal from './ssbPersonal.vue'
-import HeaderNav from './headerNav.vue'
+import Logo from './logo.vue'
+import SsbPersonal from './../ssbPersonal.vue'
+import HeaderNav from './../headerNav.vue'
 export default {
       name: 'appHeader',
      
       components: {
+        'logo': Logo,
         'ssbpersonal': SsbPersonal,
         'headernav': HeaderNav
       }
@@ -37,24 +39,14 @@ export default {
 
 
 <style scoped lang="scss">
- @import '../color.scss';
+ @import '../../color.scss';
 .appHeader {
-  .headerLeft {
-    float: left;
-    padding-left: 0;
-  }
+
   .headerRight {
     float: right;
     padding-right: 0;
   }
-  .companyLogo {
-        text-align: left;
-        img{
-          width: 233px;
-          height: 43px;
-          margin: 10px 0;
-        }
-  }
+  
 }
 
    

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <ssbUsp/>
+    <stackUsp/>
     <appBody/>
     <router-view/>
   
@@ -8,12 +8,12 @@
 </template>
 
 <script>
-import ssbUsp from '@/components/ssbUsp.vue'
+import StackUsp from '@/components/usp/stack_usp.vue'
 import appBody from '@/components/appBody.vue'
 
 export default {
   components: {
-    ssbUsp,
+    'stackUsp': StackUsp,
     appBody,
   }
 }
