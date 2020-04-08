@@ -10,7 +10,7 @@
 </template>
 
 <script lang="ts">
-import AppHeader from './header/header_stack.vue'
+import AppHeader from './header/stack_head.vue'
 import AppSearch from './appSearch.vue'
 
 export default {

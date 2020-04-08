@@ -6,7 +6,7 @@
                 <serviceline/>
             </div>
             <div class="col-sm-4">
-                <service/>
+                700 merken  37 vestigingen
             </div>
             <div class="col-sm-2">
                 <service/>
