@@ -1,5 +1,5 @@
 <template>
-    <div class="col-sm-4 companyLogo headerLeft">
+    <div class="col-sm-3 companyLogo headerLeft">
         <router-link to="/">
         <img alt="Technischeunie logo" src="../../assets/logo.png">
         </router-link>

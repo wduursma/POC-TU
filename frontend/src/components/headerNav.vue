@@ -9,9 +9,9 @@
           </router-link> 
         </li>
         -->
-        <li v-for="main in mainMenu" v-bind:key="main" class="nav-menu"> 
-          <router-link :to="'' +  main.url">
-            {{ main.name }}
+        <li v-for="menu in menus" v-bind:key="menu" class="nav-menu"> 
+          <router-link :to="'' +  menu.url">
+            {{ menu.name }}
           </router-link>
           
         </li>
@@ -27,7 +27,7 @@ import { Component, Vue } from 'vue-property-decorator';
     export default class HeaderNav extends Vue {
       data() {
       return {
-        mainMenu: [
+        menus: [
           { "name": "Draad & Kabel", "url": "/draad-kabel" },
           { "name": "Elektrotechniek", "url": "/elektrotechniek" },
           { "name": "Verlichting", "url": "/verlichting" },
