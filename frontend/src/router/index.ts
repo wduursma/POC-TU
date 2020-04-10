@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import assortiment from '../views/assortment.vue'
+import assortiment from '../views/webshop.vue'
 
 Vue.use(VueRouter)
 
@@ -17,8 +17,8 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
-     path: '/draad-kabel', 
-     name: 'Assortiment',
+     path: '/webshop', 
+     name: 'Webshop',
      component: assortiment 
   }
 ]

@@ -1,14 +1,7 @@
 <template>
-    <nav id="mainnavigation" class="main">
-    <div class="nav-divider"></div>
+<div class="container">
+    <nav id="mainnavigation" class="row main">
       <ul id="normal-main">
-        <!--
-        <li class="nav-home current">
-          <router-link to="/">
-            <span class="home desktop-only">&nbsp;</span>
-          </router-link> 
-        </li>
-        -->
         <li v-for="menu in menus" v-bind:key="menu" class="nav-menu"> 
           <router-link :to="'' +  menu.url">
             {{ menu.name }}
@@ -16,15 +9,15 @@
           
         </li>
       </ul>
-    <div class="nav-divider"></div>
-  </nav>
+    </nav>
+</div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 
 @Component
-    export default class HeaderNav extends Vue {
+    export default class Nav extends Vue {
       data() {
       return {
         menus: [
@@ -46,14 +39,16 @@ import { Component, Vue } from 'vue-property-decorator';
 
 
 <style scoped lang="scss">
- @import '../color.scss';
-
+ @import '../../color.scss';
+#webshop {
+    .container {
+        padding: 0;
+    }
+}
 nav.main {
     position: relative;
     margin: 0;
     width: 100%;
-    padding-bottom: 10px;
-    padding-top: 10px;
     >ul {
     margin-bottom: 0;
     padding: 0px;
@@ -128,8 +123,5 @@ nav.main>ul>li.currentx {
     background: linear-gradient(to right,$tuGreen,$tuGreenLight);
 }
 
-ul>li>a span.home {
-    padding: 0 5px 0 8px;
-    background: url('../assets/home.png') 0 0px no-repeat;
-}
+
 </style>

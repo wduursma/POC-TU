@@ -39,10 +39,9 @@ export default  {
 @import '../../color.scss';
 
 div#usp-header {
-    border-bottom: 1px solid $tuWhiteGray;
     min-height: 31px;
     line-height: 31px;
-    margin: 0 auto;
+    margin: 5px auto;
     overflow: hidden;
     z-index: 999;
     position: relative;

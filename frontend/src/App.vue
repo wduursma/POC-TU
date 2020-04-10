@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <stackUsp/>
-    <appBody/>
+    <stack-usp/>
+    <stack-header/>
     <router-view/>
   
   </div>
@@ -9,12 +9,12 @@
 
 <script>
 import StackUsp from '@/components/usp/stack_usp.vue'
-import appBody from '@/components/appBody.vue'
+import StackHeader from '@/components/header/stack_head.vue' 
 
 export default {
   components: {
-    'stackUsp': StackUsp,
-    appBody,
+    'StackUsp': StackUsp,
+    'StackHeader': StackHeader
   }
 }
 </script>

@@ -17,7 +17,7 @@ import { Component, Vue } from 'vue-property-decorator';
         data() {
         return {
             mainMenus: [
-            { "name": "Webshop", "url": "/draad-kabel" },
+            { "name": "Webshop", "url": "/webshop" },
             { "name": "Diensten", "url": "/elektrotechniek" },
             { "name": "Nieuws", "url": "/verlichting" }
             ]
