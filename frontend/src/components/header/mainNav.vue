@@ -18,7 +18,7 @@ import { Component, Vue } from 'vue-property-decorator';
         return {
             mainMenus: [
             { "name": "Webshop", "url": "/webshop" },
-            { "name": "Diensten", "url": "/elektrotechniek" },
+            { "name": "Diensten", "url": "/services" },
             { "name": "Nieuws", "url": "/verlichting" }
             ]
         }

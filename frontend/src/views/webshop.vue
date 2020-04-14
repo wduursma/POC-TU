@@ -1,7 +1,7 @@
 <template>
   <div id="webshop">
     <div id="navigation">
-      <navigation/>
+      <navigation v-bind:menus="menus"></navigation>
     </div>
     <h1>Webshop</h1>
   </div>
@@ -11,6 +11,21 @@
 import Nav from './../components/menu/nav.vue'
 
 export default  {
+  data() {
+    return {
+      menus: [
+        { "name": "Draad & Kabel", "url": "/draad-kabel" },
+        { "name": "Elektrotechniek", "url": "/elektrotechniek" },
+        { "name": "Verlichting", "url": "/verlichting" },
+        { "name": "Duurzaamheid", "url": "/thema" },
+        { "name": "Leidingsystemen", "url": "/leidingsystemen" },
+        { "name": "Sanitair", "url": "/sanitair" },
+        { "name": "Gereedschap", "url": "/gereedschap" },
+        { "name": "PBM", "url": "/pbm" },
+        { "name": "Bruin/witgoed", "url": "/bruin-witgoed" }
+      ]
+      }
+  },
     name: 'Webshop',
     components: {
       'navigation': Nav

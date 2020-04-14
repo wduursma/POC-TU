@@ -6,7 +6,6 @@
           <router-link :to="'' +  menu.url">
             {{ menu.name }}
           </router-link>
-          
         </li>
       </ul>
     </nav>
@@ -14,27 +13,16 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-
-@Component
-    export default class Nav extends Vue {
-      data() {
-      return {
-        menus: [
-          { "name": "Draad & Kabel", "url": "/draad-kabel" },
-          { "name": "Elektrotechniek", "url": "/elektrotechniek" },
-          { "name": "Verlichting", "url": "/verlichting" },
-          { "name": "Duurzaamheid", "url": "/thema" },
-          { "name": "Leidingsystemen", "url": "/leidingsystemen" },
-          { "name": "Sanitair", "url": "/sanitair" },
-          { "name": "Gereedschap", "url": "/gereedschap" },
-          { "name": "PBM", "url": "/pbm" },
-          { "name": "Bruin/witgoed", "url": "/bruin-witgoed" }
-        ]
+export default {
+  props: ['menus'],
+  data() {
+    return {
 
       }
-    }
+  },
+  name: 'navigation'
 }
+
 </script>
 
 
