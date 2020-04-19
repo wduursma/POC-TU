@@ -19,10 +19,6 @@
                 { "id":"104", "name": "Coax | Coaxkabel", "url": "/#" }
            ]},
            
-        ],
-        electro: [
-          { "id":"111", "name": "Electro", "url": "/#" },
-          { "id":"112", "name": "Aarddraad", "url": "/#" },
         ]
-}
+  }
 }
