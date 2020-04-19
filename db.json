@@ -2,10 +2,7 @@
   posts: [
             { "id":"0001",
               "name":"Energiekabels",
-              "items": [
-                { "id":"101", "name": "vmvl | kabel | qwpk", "url": "/#" },
-                { "id":"102", "name": "Aarddraad", "url": "/#" }
-           ]},
+              "items": "item"},
            {  "id":"0002",
               "name":"Informatie- en signaalkabels",
               "items": [
