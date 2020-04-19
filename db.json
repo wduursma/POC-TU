@@ -5,16 +5,10 @@
               "items": "item"},
            {  "id":"0002",
               "name":"Informatie- en signaalkabels",
-              "items": [
-                { "id":"103", "name": "UTP", "url": "/#" },
-                { "id":"104", "name": "Coax | Coaxkabel", "url": "/#" }
-           ]},
+              "items": },
            {  "id":"0003",
               "name":"test",
-              "items": [
-                { "id":"103", "name": "UTP-A", "url": "/#" },
-                { "id":"104", "name": "Coax | Coaxkabel", "url": "/#" }
-           ]},
+              "items": },
            
         ]
   }
