@@ -1,14 +1,27 @@
 {
-  "posts": [
-    { "id": 1, "title": "Wietze" },
-    { "id": 2, "title": "Thijs" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  kabel: [
+            { "id":"0001",
+              "name":"Energiekabels",
+              "items": [
+                { "id":"101", "name": "vmvl | kabel | qwpk", "url": "/#" },
+                { "id":"102", "name": "Aarddraad", "url": "/#" }
+           ]},
+           {  "id":"0002",
+              "name":"Informatie- en signaalkabels",
+              "items": [
+                { "id":"103", "name": "UTP", "url": "/#" },
+                { "id":"104", "name": "Coax | Coaxkabel", "url": "/#" }
+           ]},
+           {  "id":"0003",
+              "name":"test",
+              "items": [
+                { "id":"103", "name": "UTP-A", "url": "/#" },
+                { "id":"104", "name": "Coax | Coaxkabel", "url": "/#" }
+           ]},
+           
+        ],
+        electro: [
+          { "id":"111", "name": "Electro", "url": "/#" },
+          { "id":"112", "name": "Aarddraad", "url": "/#" },
+        ]
 }
