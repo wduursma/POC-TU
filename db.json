@@ -1,14 +1,14 @@
 {
-  "posts" : [
+  "posts": [
             { "id":"0001",
               "name":"Energiekabels",
-              "items": "item"},
+              "items": "item"}
            {  "id":"0002",
               "name":"Informatie- en signaalkabels",
-              "items": },
+              "items":"" }
            {  "id":"0003",
               "name":"test",
-              "items": },
+              "items":"" }
            
         ]
   }
